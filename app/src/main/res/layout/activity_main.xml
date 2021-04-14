@@ -109,6 +109,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt0"
         android:text="@string/buttonCero"
+        style="@style/NumberButton"
         app:layout_constraintBottom_toTopOf="@id/gH1"
         app:layout_constraintEnd_toStartOf="@id/gV3"
         app:layout_constraintStart_toEndOf="@id/gV1"
@@ -118,6 +119,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btComma"
+        style="@style/NumberButton"
         android:text="@string/buttonComma"
         app:layout_constraintBottom_toTopOf="@id/gH1"
         app:layout_constraintEnd_toStartOf="@id/gV4"
@@ -128,6 +130,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btEqual"
+        style="@style/SymbolButton"
         android:text="@string/buttonEqual"
         app:layout_constraintBottom_toTopOf="@id/gH1"
         app:layout_constraintEnd_toStartOf="@id/gV5"
@@ -138,6 +141,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
     android:id="@+id/btPlus"
+        style="@style/SymbolButton"
         android:text="@string/buttonPlus"
     app:layout_constraintBottom_toTopOf="@id/gH2"
     app:layout_constraintEnd_toStartOf="@id/gV5"
@@ -148,6 +152,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt1"
+        style="@style/NumberButton"
         android:text="@string/buttonOne"
         app:layout_constraintBottom_toTopOf="@id/gH2"
         app:layout_constraintEnd_toStartOf="@id/gV2"
@@ -158,6 +163,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt2"
+        style="@style/NumberButton"
         android:text="@string/buttonTwo"
         app:layout_constraintBottom_toTopOf="@id/gH2"
         app:layout_constraintEnd_toStartOf="@id/gV3"
@@ -168,6 +174,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt3"
+        style="@style/NumberButton"
         android:text="@string/buttonThree"
         app:layout_constraintBottom_toTopOf="@id/gH2"
         app:layout_constraintEnd_toStartOf="@id/gV4"
@@ -178,6 +185,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt4"
+        style="@style/NumberButton"
         android:text="@string/buttonFour"
         app:layout_constraintBottom_toTopOf="@id/gH3"
         app:layout_constraintEnd_toStartOf="@id/gV2"
@@ -188,6 +196,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt5"
+        style="@style/NumberButton"
         android:text="@string/buttonFive"
         app:layout_constraintBottom_toTopOf="@id/gH3"
         app:layout_constraintEnd_toStartOf="@id/gV3"
@@ -198,6 +207,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt6"
+        style="@style/NumberButton"
         android:text="@string/buttonSix"
         app:layout_constraintBottom_toTopOf="@id/gH3"
         app:layout_constraintEnd_toStartOf="@id/gV4"
@@ -208,6 +218,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btMinus"
+        style="@style/SymbolButton"
         android:text="@string/buttonMinus"
         app:layout_constraintBottom_toTopOf="@id/gH3"
         app:layout_constraintEnd_toStartOf="@id/gV5"
@@ -218,6 +229,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt7"
+        style="@style/NumberButton"
         android:text="@string/buttonSeven"
         app:layout_constraintBottom_toTopOf="@id/gH4"
         app:layout_constraintEnd_toStartOf="@id/gV2"
@@ -228,6 +240,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt8"
+        style="@style/NumberButton"
         android:text="@string/buttonEigth"
         app:layout_constraintBottom_toTopOf="@id/gH4"
         app:layout_constraintEnd_toStartOf="@id/gV3"
@@ -238,6 +251,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt9"
+        style="@style/NumberButton"
         android:text="@string/buttonNine"
         app:layout_constraintBottom_toTopOf="@id/gH4"
         app:layout_constraintEnd_toStartOf="@id/gV4"
@@ -248,6 +262,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btMul"
+        style="@style/SymbolButton"
         android:text="@string/buttonMult"
         app:layout_constraintBottom_toTopOf="@id/gH4"
         app:layout_constraintEnd_toStartOf="@id/gV5"
@@ -258,6 +273,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btClear"
+        style="@style/NumberButton"
         android:text="@string/buttonClear"
         app:layout_constraintBottom_toTopOf="@id/gH5"
         app:layout_constraintEnd_toStartOf="@id/gV4"
@@ -268,6 +284,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btDiv"
+        style="@style/SymbolButton"
         android:text="@string/buttonDiv"
         app:layout_constraintBottom_toTopOf="@id/gH5"
         app:layout_constraintEnd_toStartOf="@id/gV5"
@@ -275,5 +292,14 @@
         app:layout_constraintTop_toBottomOf="@id/gH6"
         android:layout_width="0dp"
         android:layout_height="0dp" />
+
+    <View
+        android:id="@+id/separator"
+        style="@style/Separator"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/gH1"
+        app:layout_constraintEnd_toStartOf="@id/gV4"
+        app:layout_constraintStart_toEndOf="@id/gV4"
+        app:layout_constraintTop_toTopOf="@id/gH6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
