@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9"
+        app:layout_constraintGuide_percent="0.8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8"
+        app:layout_constraintGuide_percent="0.6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7"
+        app:layout_constraintGuide_percent="0.4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"
+        app:layout_constraintGuide_percent="0.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -57,18 +57,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_percent="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gH7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gV1"
@@ -84,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintGuide_percent="0.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -93,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_percent="0.4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -102,12 +94,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75"
+        app:layout_constraintGuide_percent="0.6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gV6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -120,7 +121,7 @@
         android:text="@string/buttonCero"
         style="@style/NumberButton"
         app:layout_constraintBottom_toTopOf="@id/gH1"
-        app:layout_constraintEnd_toStartOf="@id/gV3"
+        app:layout_constraintEnd_toStartOf="@id/gV4"
         app:layout_constraintStart_toEndOf="@id/gV1"
         app:layout_constraintTop_toBottomOf="@id/gH2"
         android:layout_width="0dp"
@@ -128,11 +129,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btComma"
-        style="@style/NumberButton"
+        style="@style/SymbolButton"
         android:text="@string/buttonComma"
         app:layout_constraintBottom_toTopOf="@id/gH1"
-        app:layout_constraintEnd_toStartOf="@id/gV4"
-        app:layout_constraintStart_toEndOf="@id/gV3"
+        app:layout_constraintEnd_toStartOf="@id/gV5"
+        app:layout_constraintStart_toEndOf="@id/gV4"
         app:layout_constraintTop_toBottomOf="@id/gH2"
         android:layout_width="0dp"
         android:layout_height="0dp" />
@@ -142,8 +143,8 @@
         style="@style/SymbolButton"
         android:text="@string/buttonEqual"
         app:layout_constraintBottom_toTopOf="@id/gH1"
-        app:layout_constraintEnd_toStartOf="@id/gV5"
-        app:layout_constraintStart_toEndOf="@id/gV4"
+        app:layout_constraintEnd_toStartOf="@id/gV6"
+        app:layout_constraintStart_toEndOf="@id/gV5"
         app:layout_constraintTop_toBottomOf="@id/gH2"
         android:layout_width="0dp"
         android:layout_height="0dp" />
@@ -152,10 +153,10 @@
     android:id="@+id/btPlus"
         style="@style/SymbolButton"
         android:text="@string/buttonPlus"
-    app:layout_constraintBottom_toTopOf="@id/gH2"
+    app:layout_constraintBottom_toTopOf="@id/gH3"
     app:layout_constraintEnd_toStartOf="@id/gV5"
     app:layout_constraintStart_toEndOf="@id/gV4"
-    app:layout_constraintTop_toBottomOf="@id/gH3"
+    app:layout_constraintTop_toBottomOf="@id/gH4"
     android:layout_width="0dp"
     android:layout_height="0dp" />
 
@@ -230,8 +231,8 @@
         style="@style/SymbolButton"
         android:text="@string/buttonMinus"
         app:layout_constraintBottom_toTopOf="@id/gH3"
-        app:layout_constraintEnd_toStartOf="@id/gV5"
-        app:layout_constraintStart_toEndOf="@id/gV4"
+        app:layout_constraintEnd_toStartOf="@id/gV6"
+        app:layout_constraintStart_toEndOf="@id/gV5"
         app:layout_constraintTop_toBottomOf="@id/gH4"
         android:layout_width="0dp"
         android:layout_height="0dp" />
@@ -273,21 +274,21 @@
         android:id="@+id/btMul"
         style="@style/SymbolButton"
         android:text="@string/buttonMult"
-        app:layout_constraintBottom_toTopOf="@id/gH4"
+        app:layout_constraintBottom_toTopOf="@id/gH2"
         app:layout_constraintEnd_toStartOf="@id/gV5"
         app:layout_constraintStart_toEndOf="@id/gV4"
-        app:layout_constraintTop_toBottomOf="@id/gH5"
+        app:layout_constraintTop_toBottomOf="@id/gH3"
         android:layout_width="0dp"
         android:layout_height="0dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btClear"
-        style="@style/NumberButton"
+        style="@style/SymbolButton"
         android:text="@string/buttonClear"
-        app:layout_constraintBottom_toTopOf="@id/gH5"
-        app:layout_constraintEnd_toStartOf="@id/gV4"
-        app:layout_constraintStart_toEndOf="@id/gV1"
-        app:layout_constraintTop_toBottomOf="@id/gH6"
+        app:layout_constraintBottom_toTopOf="@id/gH4"
+        app:layout_constraintEnd_toStartOf="@id/gV6"
+        app:layout_constraintStart_toEndOf="@id/gV4"
+        app:layout_constraintTop_toBottomOf="@id/gH5"
         android:layout_width="0dp"
         android:layout_height="0dp" />
 
@@ -295,10 +296,10 @@
         android:id="@+id/btDiv"
         style="@style/SymbolButton"
         android:text="@string/buttonDiv"
-        app:layout_constraintBottom_toTopOf="@id/gH5"
-        app:layout_constraintEnd_toStartOf="@id/gV5"
-        app:layout_constraintStart_toEndOf="@id/gV4"
-        app:layout_constraintTop_toBottomOf="@id/gH6"
+        app:layout_constraintBottom_toTopOf="@id/gH2"
+        app:layout_constraintEnd_toStartOf="@id/gV6"
+        app:layout_constraintStart_toEndOf="@id/gV5"
+        app:layout_constraintTop_toBottomOf="@id/gH3"
         android:layout_width="0dp"
         android:layout_height="0dp" />
 
@@ -309,7 +310,7 @@
         app:layout_constraintBottom_toBottomOf="@id/gH1"
         app:layout_constraintEnd_toStartOf="@id/gV4"
         app:layout_constraintStart_toEndOf="@id/gV4"
-        app:layout_constraintTop_toTopOf="@id/gH6" />
+        app:layout_constraintTop_toTopOf="@id/gH5" />
 
     <TextView
         android:id="@+id/screen"
@@ -320,9 +321,9 @@
         android:text="@string/buttonCero"
         android:gravity="center|end"
         style="@style/ScreenNumber"
-        app:layout_constraintBottom_toTopOf="@id/gH6"
-        app:layout_constraintEnd_toStartOf="@id/gV5"
+        app:layout_constraintBottom_toTopOf="@id/gH5"
+        app:layout_constraintEnd_toStartOf="@id/gV6"
         app:layout_constraintStart_toEndOf="@id/gV1"
-        app:layout_constraintTop_toBottomOf="@id/gH7" />
+        app:layout_constraintTop_toBottomOf="@id/gH6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
